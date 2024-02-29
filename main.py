@@ -3,8 +3,6 @@ from pyrogram import Client
 from pyrogram import enums
 import requests as req
 from Config import Config
-from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
-import wget
 import os 
 
 app=Client('xBot',
