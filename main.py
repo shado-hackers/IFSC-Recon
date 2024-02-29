@@ -1,4 +1,6 @@
-from pyrogram import *
+from pyrogram import filters
+from pyrogram import Client
+from pyrogram import enums
 import requests as req
 from Config import *
 from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
