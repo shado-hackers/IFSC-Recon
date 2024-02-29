@@ -5,7 +5,8 @@ import requests as req
 from Config import Config
 import os 
 
-app=Client('xBot',
+
+app=Client('Temp-Mail Bot',
            api_id=API_ID,
            api_hash=API_HASH,
            bot_token=BOT_TOKEN)
