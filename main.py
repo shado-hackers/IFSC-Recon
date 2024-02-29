@@ -29,7 +29,7 @@ async def about_msg(client,message):
     await message.reply('__Developer : @riz4d (:\n\nSource Code : [GitHub Repo](https://github.com/riz4d/IFSC-Recon)__')
   
     
-@app.on_message(filters.text)
+@app.on_message(filters.private & filters.text & ~filters.command(['ifsc']))
 async def ifsc_data(client,message):
     
    query=message.text.upper()
