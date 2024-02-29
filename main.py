@@ -11,6 +11,11 @@ app=Client('Temp-Mail Bot',
            api_hash=API_HASH,
            bot_token=BOT_TOKEN)
 
+
+API='https://ifsc.razorpay.com/' 
+head="Detailed InFo\n...................\n\n"
+
+
 @app.on_message(filters.command('start'))
 async def start_msg(client,message):
     await message.reply('**Hey '+message.from_user.first_name+"  🖐**\n\n__I'm IFSC Recon Bot, I can retrive information from IFSC Code by Just senting here the IFSC Code\n\nDev : @riz4d__")
@@ -29,7 +34,7 @@ async def ifsc_data(client,message):
     
    query=message.text.upper()
    try:
-    url_request=req.get(base_url+query)
+    url_request=req.get(API+query)
     url_json=url_request.json()
     
     #datas
