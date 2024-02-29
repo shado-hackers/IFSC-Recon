@@ -1,9 +1,16 @@
 #TELEGRAM CREDENTIALS
 
-API_ID = "<PUT API-ID HERE"
-API_HASH = "<PUT API-HASH HERE>"
-BOT_TOKEN = "<PUT BOT-TOKEN HERE"
 
+import os
+from os import environ
+
+class Config(object):
+
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+
+    API_ID = int(os.environ.get("API_ID", 12345))
+
+    API_HASH = os.environ.get("API_HASH")
 
 #CONSTANT VARIABLES
 base_url='https://ifsc.razorpay.com/' 
