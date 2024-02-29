@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram import Client
 from pyrogram import enums
 import requests as req
-from Config import Config
+from Config import *
 import os 
 
 
